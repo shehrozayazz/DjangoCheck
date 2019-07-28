@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registeration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <form class="form"  method="POST">
+
+        {% csrf_token %}
+        <br/><br/>
+        <input type="text" name="first_name" placeholder="Enter first name "/><br/>
+        <input type="text" name="last_name" placeholder="Enter last name "/><br/>
+        <input type="text" name="username" placeholder="Enter username "/><br/>
+        <input type="email" name="email" placeholder="Enter email "/><br/>
+        <input type="password" name="password1" placeholder="Enter password"/><br/>
+        <input type="password" name="password2" placeholder="Enter password again "/><br/>
+        <input type="submit" value="Register" class="btn btn-primary" "/><br/>
+
+
+    </form>
+    
+</body>
+</html>
